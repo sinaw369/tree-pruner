@@ -1,6 +1,6 @@
-# Tree Pruner
+# Folder Folding
 
-**Tree Pruner** is a lightweight VS Code extension that helps you collapse all descendant folders of a selected directory in the Explorer with a single command or keyboard shortcut.
+**Folder Folding** is a lightweight VS Code extension that helps you collapse all descendant folders of a selected directory in the Explorer with a single command or keyboard shortcut.
 
 ## Features
 
@@ -14,14 +14,14 @@
 1. **From the Marketplace**
 
    * In VS Code, open the Extensions view (`Ctrl+Shift+X`).
-   * Search for **Tree Pruner**.
+   * Search for **Folder Folding**.
    * Click **Install**.
 
 2. **Manual (.vsix) Install**
 
    ```bash
    vsce package
-   code --install-extension tree-pruner-0.0.1.vsix
+   code --install-extension Folder Folding-0.0.1.vsix
    ```
 
 ## Usage
@@ -58,7 +58,7 @@ This extension contributes no custom settings.
 
 ## Contributing
 
-Contributions and feedback are welcome! Feel free to open issues or submit pull requests on [GitHub](https://github.com/YourUserName/tree-pruner).
+Contributions and feedback are welcome! Feel free to open issues or submit pull requests on [GitHub](https://github.com/sinaw369/folder-folding).
 
 ## License
 
