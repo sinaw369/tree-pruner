@@ -3,7 +3,7 @@
   "displayName": "Tree Pruner",
   "description": "Prune all descendant folders when collapsing a folder in VS Code Explorer.",
   "version": "0.0.1",
-  "publisher": "your-publisher-name",
+  "publisher": "sinaw369",
   "engines": {
     "vscode": "^1.60.0"
   },
