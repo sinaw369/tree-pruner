@@ -4,7 +4,25 @@
   "description": "Prune all descendant folders when collapsing a folder in VS Code Explorer.",
   "version": "0.0.1",
   "publisher": "your-publisher-name",
-  "engines": { "vscode": "^1.60.0" },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sinaw369/tree-pruner.git"
+  },
+  "homepage": "https://github.com/sinaw369/tree-pruner#readme",
+  "keywords": [
+    "explorer",
+    "collapse",
+    "folders",
+    "recursive",
+    "vscode"
+  ],
+  "categories": [
+    "Other"
+  ],
   "activationEvents": [
     "onCommand:tree-pruner.collapseRecursively"
   ],
@@ -27,13 +45,13 @@
     },
     "keybindings": [
       {
-        "key": "ctrl+shift+c",
+        "key": "ctrl+k ctrl+shift+c",
         "command": "tree-pruner.collapseRecursively",
         "when": "explorerViewletFocus && explorerViewletVisible"
       },
       {
         "key": "ctrl+k ctrl+shift+c",
-        "command": "workbench.files.action.collapseExplorerFolders",
+        "command": "tree-pruner.collapseRecursively",
         "when": "editorTextFocus"
       },
       {
@@ -42,7 +60,7 @@
         "when": "explorerViewletFocus && explorerViewletVisible"
       },
       {
-        "key": "ctrl+k ctrl+shift+x",
+        "key": "ctrl+shift+x",
         "command": "workbench.files.action.collapseExplorerFolders",
         "when": "editorTextFocus"
       }
