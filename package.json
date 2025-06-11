@@ -1,6 +1,6 @@
 {
-  "name": "tree-pruner",
-  "displayName": "Tree Pruner",
+  "name": "folder-folding",
+  "displayName": "Folder Folding",
   "description": "Prune all descendant folders when collapsing a folder in VS Code Explorer.",
   "version": "0.0.2",
   "publisher": "sinaw369",
@@ -10,9 +10,9 @@
   "icon": "icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sinaw369/tree-pruner.git"
+    "url": "https://github.com/sinaw369/folder-folding.git"
   },
-  "homepage": "https://github.com/sinaw369/tree-pruner#readme",
+  "homepage": "https://github.com/sinaw369/folder-folding#readme",
   "keywords": [
     "explorer",
     "collapse",
@@ -24,20 +24,20 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:tree-pruner.collapseRecursively"
+    "onCommand:folder-folding.collapseRecursively"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "tree-pruner.collapseRecursively",
+        "command": "folder-folding.collapseRecursively",
         "title": "Collapse Folder Recursively"
       }
     ],
     "menus": {
       "explorer/context": [
         {
-          "command": "tree-pruner.collapseRecursively",
+          "command": "folder-folding.collapseRecursively",
           "when": "resourceScheme == 'file'",
           "group": "navigation"
         }
