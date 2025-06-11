@@ -1,0 +1,61 @@
+{
+  "name": "tree-pruner",
+  "displayName": "Tree Pruner",
+  "description": "Prune all descendant folders when collapsing a folder in VS Code Explorer.",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "engines": { "vscode": "^1.60.0" },
+  "activationEvents": [
+    "onCommand:tree-pruner.collapseRecursively"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "tree-pruner.collapseRecursively",
+        "title": "Collapse Folder Recursively"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "tree-pruner.collapseRecursively",
+          "when": "resourceScheme == 'file'",
+          "group": "navigation"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "key": "ctrl+shift+c",
+        "command": "tree-pruner.collapseRecursively",
+        "when": "explorerViewletFocus && explorerViewletVisible"
+      },
+      {
+        "key": "ctrl+k ctrl+shift+c",
+        "command": "workbench.files.action.collapseExplorerFolders",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+shift+x",
+        "command": "workbench.files.action.collapseExplorerFolders",
+        "when": "explorerViewletFocus && explorerViewletVisible"
+      },
+      {
+        "key": "ctrl+k ctrl+shift+x",
+        "command": "workbench.files.action.collapseExplorerFolders",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.3",
+    "@types/node": "^14.14.37",
+    "@types/vscode": "^1.60.0",
+    "vscode-test": "^1.6.0"
+  }
+}
